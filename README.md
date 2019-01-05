@@ -5,11 +5,12 @@ The purpose of making this bot was to handle tasks and make them easier as someo
 
 
 By doing this I spend less time  deleting messages, banning troublesome members, don't need to every worry about members not having proper permission because of autorole, and other micro-managing tasks.
+
 ![](clear.gif)
 
 
 Not only does it handle some more important roles, but it also add some spice to the server with funny commands, TTS, and a neat status-changing command that changes the bot's game played every X seconds.
-![](game_status.gif)
+
 
 ![](chungus.png)
 
