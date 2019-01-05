@@ -3,6 +3,7 @@ This project is for 42's Portfolio Project ("Wildcard") and this project is an o
 
 The purpose of making this bot was to handle tasks and make them easier as someone who helps run a discord server. By this I mean handling tasks such as deleting messages, adding roles to new members, and making sure the other commands I add to the bot can only be used by admins (if the command edits or manages the server). 
 
+![](clear.gif)
 
 By doing this I spend less time  deleting messages, banning troublesome members, don't need to every worry about members not having proper permission because of autorole, and other micro-managing tasks.
 
