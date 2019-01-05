@@ -12,6 +12,12 @@ token = 'NTIwNzA4OTMzMjQxNzk4Njc2.DvBsqg.ckPls4nvuiPVojYyjCECb5ilPaw'
 bot_status = ['Game of Thrones Season 8', 'in the Tournament of Power', 'in the Timeline', 'with TTY', 'Stamprats', 'with Gaetan']
 
 @client.event
+async def on_member_join(member):
+    server = member.server
+    fmt = 'Welcome {0.mention} to {1.name}!'
+    await client.send_message(server, fmt.format(member, server))
+
+@client.event
 async def ready():
 	print('Online')
 
@@ -68,6 +74,12 @@ async def on_message(message):
 		await client.send_typing(message.channel)
 		await client.send_message(message.channel, "https://gfycat.com/alarmingcreepyheifer")
 
+	if "492499319300161536" in [role.id for role in message.author.roles] or "506338662921797635" in [role.id for role in message.author.roles]:
+		if '!CLEAR' in message.content.upper():
+			tmp = await client.send_message(message.channel, 'Clearing messages...')
+			async for msg in client.logs_from(message.channel):
+				await client.delete_message(msg)
+
 @client.event
 async def swap():
 	await client.wait_until_ready()
@@ -76,7 +88,7 @@ async def swap():
 	while not client.is_closed:
 		current_status = next(msgs)
 		await client.change_presence(game=discord.Game(name=current_status))	
-		await asyncio.sleep(10)
+		await asyncio.sleep(30)
 
 client.loop.create_task(swap())
 client.run(token)
