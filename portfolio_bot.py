@@ -6,7 +6,6 @@ from itertools import cycle
 from discord.utils import get
 
 client = discord.Client()
-bot = commands.Bot(command_prefix = '!')
 
 bot_status = ['Game of Thrones Season 8', 'in the Tournament of Power', 'in the Timeline', 'with TTY', 'Stamprats', 'with Gaetan']
 
