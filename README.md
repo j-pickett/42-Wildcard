@@ -11,11 +11,6 @@ Not only does it handle some more important roles, but it also add some spice to
 
 This project started off as a great way to expand my knowledge of python and do something fun. As it turns out I will not stop working on this bot because it can never be perfect, and I have had so many great ideas of what I can do with it. The only trouble will be finding the time to implement it all 😅.
 
+To get my bot in your server simply head to the following URL, invite, and enjoy!
 
-BOT ID: 520708933241798676
-
-To get my bot into your Discord server simply paste the following url and it will join your server!
-
-https://discordapp.com/oauth2/authorize?client_id=<520708933241798676>&scope=bot&permissions=0
-
-
+https://discordbots.org/bot/520708933241798676
