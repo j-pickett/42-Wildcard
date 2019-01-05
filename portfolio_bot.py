@@ -8,7 +8,6 @@ from discord.utils import get
 client = discord.Client()
 bot = commands.Bot(command_prefix = '!')
 
-token = 'NTIwNzA4OTMzMjQxNzk4Njc2.DvBsqg.ckPls4nvuiPVojYyjCECb5ilPaw'
 bot_status = ['Game of Thrones Season 8', 'in the Tournament of Power', 'in the Timeline', 'with TTY', 'Stamprats', 'with Gaetan']
 
 @client.event
