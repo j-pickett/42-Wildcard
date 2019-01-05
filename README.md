@@ -5,13 +5,13 @@ The purpose of making this bot was to handle tasks and make them easier as someo
 
 
 By doing this I spend less time  deleting messages, banning troublesome members, don't need to every worry about members not having proper permission because of autorole, and other micro-managing tasks.
-http://www.giphy.com/gifs/7Tr2se5tyO70crPF8D
+![](clear.gif)
 
 
 Not only does it handle some more important roles, but it also add some spice to the server with funny commands, TTS, and a neat status-changing command that changes the bot's game played every X seconds.
-http://www.giphy.com/gifs/8vFcviqiY7seqo2wFV
+![](game_status.gif)
 
-https://imgur.com/8d4VktV
+![](chungus.png)
 
 This project started off as a great way to expand my knowledge of python and do something fun. As it turns out I will not stop working on this bot because it can never be perfect, and I have had so many great ideas of what I can do with it. The only trouble will be finding the time to implement it all 😅.
 
