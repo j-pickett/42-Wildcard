@@ -88,7 +88,7 @@ async def swap():
 	while not client.is_closed:
 		current_status = next(msgs)
 		await client.change_presence(game=discord.Game(name=current_status))	
-		await asyncio.sleep(30)
+		await asyncio.sleep(1)
 
 client.loop.create_task(swap())
 client.run(token)
