@@ -7,7 +7,6 @@ from discord.utils import get
 
 client = discord.Client()
 
-token = "NTMxNTM3ODczOTYzNTgxNDgw.DyVGXA.R1SRkk8Y5Bkl9nrmDSH--3Y-x7w"
 bot_status = ['!help', 'Game of Thrones Season 8', 'in the Tournament of Power', 'in the Timeline', 'with TTY', 'Stamprats', 'with Gaetan']
 
 owner_id = "506338662921797635"
