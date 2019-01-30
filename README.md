@@ -16,6 +16,4 @@ Not only does it handle some more important roles, but it also add some spice to
 
 This project started off as a great way to expand my knowledge of python and do something fun. As it turns out I will not stop working on this bot because it can never be perfect, and I have had so many great ideas of what I can do with it. The only trouble will be finding the time to implement it all 😅.
 
-To get my bot in your server simply head to the following URL, invite, and enjoy!
-
-https://discordbots.org/bot/520708933241798676
+UPDATE #1: I have had my friend @nano help me add the bot to Heroku, where it is now running 24/7 in my personal server. It is also in its own work environment meaning all I have to do is clone the heroku repo, and I can edit the bot and push updates live.
