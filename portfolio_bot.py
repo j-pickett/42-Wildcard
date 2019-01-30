@@ -11,7 +11,7 @@ bot_status = ['!help', 'Game of Thrones Season 8', 'in the Tournament of Power',
 
 owner_id = "506338662921797635"
 admin_id = "492499319300161536"
-kike_id = "506329003225907211"
+user_id = "506329003225907211"
 pow_id = ["536351163105411072"]
 chat_filter = ["!CHUNGUS", "!CLEAR", "!TTY", "!SPEAK", "!PRANAV", "!PRINTF", "!AUSTIN", "!ANDREW", "!WAFFLE", "!NANI"]
 bypass_list = ["492499319300161536", "506338662921797635", "506329003225907211"]
