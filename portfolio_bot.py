@@ -5,13 +5,14 @@ from discord.ext import commands
 from itertools import cycle
 from discord.utils import get
 
+disco = commands.Bot(command_prefix = '!')
 client = discord.Client()
 
 bot_status = ['!help', 'Game of Thrones Season 8', 'in the Tournament of Power', 'in the Timeline', 'with TTY', 'Stamprats', 'with Gaetan']
 
 owner_id = "506338662921797635"
 admin_id = "492499319300161536"
-user_id = "506329003225907211"
+kike_id = "506329003225907211"
 pow_id = ["536351163105411072"]
 chat_filter = ["!CHUNGUS", "!CLEAR", "!TTY", "!SPEAK", "!PRANAV", "!PRINTF", "!AUSTIN", "!ANDREW", "!WAFFLE", "!NANI"]
 bypass_list = ["492499319300161536", "506338662921797635", "506329003225907211"]
@@ -20,6 +21,11 @@ bypass_list = ["492499319300161536", "506338662921797635", "506329003225907211"]
 async def mem_status(stat):
 	if str(stat.discord.status) == "online":
 		if () """
+
+@client.event
+async def join(ctx):
+	channel = ctx.message.author.voice.voice_channel
+	await client.join_voice_channel(channel) 
 
 @client.event
 async def on_member_join(member):
@@ -36,16 +42,16 @@ async def ready():
 @client.event
 async def on_message(message):
 #this checks if a command is used and if used by someone not in the bypass list, del
-	contents = message.content.split(" ")
+	""" contents = message.content.split(" ")
 	for word in contents:
 		if word.upper() in chat_filter:
-			if not roles.id in bypass_list:
+			if not role.id in bypass_list:
 				try:
 					await client.delete_message(message)
 					await client.send_message(message.channel, "You need to have your role changed from POW to use commands")
 				except discord.errors.NotFound:
 					return
-
+ """
 	if not pow_id in [role.id for role in message.author.roles]:
 		if message.author == client.user:
 			return
@@ -126,10 +132,19 @@ async def on_message(message):
 		await client.send_message(message.channel, "You don't have permissions to use that comamnd")
 
 	if admin_id in [role.id for role in message.author.roles] or owner_id in [role.id for role in message.author.roles]:
+		if message.content.upper().startswith('!KICK'):
+
+		if message.content.upper().startswith('!BAN'):
+
+		if message.content.upper().startswith('!MUTE'):
+
 		if message.content.upper().startswith('!CLEAR'):
 			tmp = await client.send_message(message.channel, 'Clearing messages...')
 			async for msg in client.logs_from(message.channel):
 				await client.delete_message(msg)
+
+	#add an audio player with a !play, !skip, and possibly add a queue for a songlist
+	#skip will need admin privs so friends cant spam skip
 
 @client.event
 async def swap():
