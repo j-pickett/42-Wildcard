@@ -79,6 +79,10 @@ async def on_message(message):
 			msg = 'Greetings {0.author.mention}'.format(message)
 			await client.send_message(message.channel, msg)
 
+		if message.content.upper().startswith('!NUM1'):
+			await client.send_message(message.channel, ";;play we are number one")
+			if "184405311681986560" in message.author.id:
+				await client.send_message(message.channel, "1")
 		if 'GAETAN' in message.content.upper():
 			await client.add_reaction(message, emoji=':GayBoi:481992855376887808')
 			await client.add_reaction(message, emoji=':ssgaetan:508911822544306183')
@@ -99,6 +103,10 @@ async def on_message(message):
 
 		if "439110082106753024" in message.author.id:
 			await client.add_reaction(message, emoji='🖕')
+
+		if message.content.upper().startswith('!NAH'):
+			await client.send_typing(message.channel)
+			await client.send_message(message.channel, "https://www.youtube.com/watch?v=PfYnvDL0Qcw")
 
 		if "171328042763812864" in message.author.id:
 			await client.add_reaction(message, emoji=':cuck:525077184424181760')
@@ -132,12 +140,6 @@ async def on_message(message):
 		await client.send_message(message.channel, "You don't have permissions to use that comamnd")
 
 	if admin_id in [role.id for role in message.author.roles] or owner_id in [role.id for role in message.author.roles]:
-		if message.content.upper().startswith('!KICK'):
-
-		if message.content.upper().startswith('!BAN'):
-
-		if message.content.upper().startswith('!MUTE'):
-
 		if message.content.upper().startswith('!CLEAR'):
 			tmp = await client.send_message(message.channel, 'Clearing messages...')
 			async for msg in client.logs_from(message.channel):
@@ -157,4 +159,4 @@ async def swap():
 		await asyncio.sleep(1)
 
 client.loop.create_task(swap())
-client.run(token)
+client.run(tok
